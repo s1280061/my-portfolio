@@ -9,6 +9,25 @@ const interests = [
   "Explainable driving assistance",
 ];
 
+const experience = [
+  {
+    role: "AD/ADAS Engineer & AI Researcher",
+    org: "Nissan Motor Co.",
+    period: "2026 – Present",
+  },
+];
+
+const education = [
+  {
+    degree: "M.S. in Automotive Science",
+    school: "Kyushu University",
+  },
+  {
+    degree: "B.E. in Computer Science and Engineering",
+    school: "Kyushu University",
+  },
+];
+
 const news = [
   {
     date: "Apr 2026",
@@ -118,6 +137,35 @@ export default function Home() {
               {skill}
             </span>
           ))}
+        </div>
+      </section>
+
+      {/* Experience & Education */}
+      <section className="max-w-3xl mx-auto px-6 pb-16">
+        <div className="grid sm:grid-cols-2 gap-8">
+          <div>
+            <h2 className="text-xl font-semibold mb-4 text-gray-300">Experience</h2>
+            <div className="space-y-3">
+              {experience.map((e) => (
+                <div key={e.role}>
+                  <p className="font-medium text-gray-200 text-sm">{e.role}</p>
+                  <p className="text-sm text-indigo-400">{e.org}</p>
+                  <p className="text-xs text-gray-500 mt-0.5">{e.period}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h2 className="text-xl font-semibold mb-4 text-gray-300">Education</h2>
+            <div className="space-y-3">
+              {education.map((e) => (
+                <div key={e.degree}>
+                  <p className="font-medium text-gray-200 text-sm">{e.degree}</p>
+                  <p className="text-sm text-indigo-400">{e.school}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
