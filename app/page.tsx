@@ -24,7 +24,7 @@ const education = [
   },
   {
     degree: "B.E. in Computer Science and Engineering",
-    school: "Kyushu University",
+    school: "University of Aizu",
   },
 ];
 
