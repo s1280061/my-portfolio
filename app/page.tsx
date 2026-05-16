@@ -43,7 +43,7 @@ export default function Home() {
             />
           </div>
           <div>
-            <h1 className="text-3xl font-bold mb-1">Kaito ASAI</h1>
+            <h1 className="text-3xl font-bold mb-1">Kaito Asai</h1>
             <p className="text-indigo-400 font-medium mb-4">
               AD/ADAS Engineer &amp; AI Researcher at Nissan Motor Co.
             </p>
