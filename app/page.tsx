@@ -64,6 +64,14 @@ export default function Home() {
               >
                 GitHub
               </a>
+              <a
+                href="https://www.linkedin.com/in/kaito-asai-267671393/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-indigo-400 hover:text-indigo-300 underline underline-offset-4"
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
         </div>
