@@ -70,7 +70,7 @@ const publications = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-950 text-gray-100">
+    <main className="min-h-screen bg-black text-gray-100">
       {/* Hero / Profile */}
       <section id="profile" className="max-w-3xl mx-auto px-6 pt-24 pb-16">
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8">
