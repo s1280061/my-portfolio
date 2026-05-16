@@ -8,6 +8,23 @@ const interests = [
   "Explainable driving assistance",
 ];
 
+const publications = [
+  {
+    title:
+      "A Quantitative Analysis of Driving Advice Capabilities of the Vision-Language Model LLaVA",
+    venue: "IEICE Technical Committee on Intelligent Transport Systems (ITS)",
+    date: "Mar 3, 2026",
+    url: "https://ken.ieice.org/ken/paper/20260303HcsS/",
+  },
+  {
+    title:
+      "RiSA: Risk-aware Situational Assistant: From Risk Forecasting to Actionable Driver Advice",
+    venue: "2025 IEEE International Conference on Big Data (IEEE BigData 2025)",
+    date: "Dec 11, 2025",
+    url: "https://ieeexplore.ieee.org/abstract/document/11401483/",
+  },
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-950 text-gray-100">
@@ -18,22 +35,18 @@ export default function Home() {
             K
           </div>
           <div>
-            <h1 className="text-3xl font-bold mb-1">Kaito Asai</h1>
+            <h1 className="text-3xl font-bold mb-1">Kaito ASAI</h1>
             <p className="text-indigo-400 font-medium mb-4">
               AD/ADAS Engineer &amp; AI Researcher at Nissan Motor Co.
             </p>
-            <p className="text-gray-400 leading-relaxed mb-4">
-              I explore cooperative intelligence, VLM-based driving assistance,
-              and multi-agent systems for autonomous driving and parking scenarios.
+            <p className="text-gray-400 leading-relaxed mb-2">
+              I explore cooperative intelligence and VLM-based driving assistance
+              for autonomous driving and parking scenarios.
             </p>
-            <ul className="space-y-1 mb-6">
-              {interests.map((item) => (
-                <li key={item} className="text-sm text-gray-500 flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-indigo-500 shrink-0" />
-                  {item}
-                </li>
-              ))}
-            </ul>
+            <p className="text-gray-400 leading-relaxed mb-6">
+              My recent work focuses on cooperative perception,
+              multi-agent reasoning, and human-centered mobility systems.
+            </p>
             <div className="flex gap-4">
               <a
                 href="https://github.com/s1280061"
@@ -52,13 +65,35 @@ export default function Home() {
       <section className="max-w-3xl mx-auto px-6 pb-16">
         <h2 className="text-xl font-semibold mb-4 text-gray-300">Skills</h2>
         <div className="flex flex-wrap gap-2">
-          {["Python", "PyTorch", "C++", "ROS", "LLM / VLM", "V2X", "ADAS", "LangGraph"].map((skill) => (
+          {["Python", "VLM", "Multi-Agent", "V2X", "ADAS", "PyTorch"].map((skill) => (
             <span
               key={skill}
               className="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300"
             >
               {skill}
             </span>
+          ))}
+        </div>
+      </section>
+
+      {/* Publications */}
+      <section id="publications" className="max-w-3xl mx-auto px-6 pb-16">
+        <h2 className="text-xl font-semibold mb-6 text-gray-300">Publications</h2>
+        <div className="space-y-5">
+          {publications.map((pub) => (
+            <a
+              key={pub.title}
+              href={pub.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block p-5 bg-gray-900 rounded-xl border border-gray-800 hover:border-indigo-500 transition-colors group"
+            >
+              <h3 className="font-semibold leading-snug mb-2 group-hover:text-indigo-400 transition-colors">
+                {pub.title}
+              </h3>
+              <p className="text-sm text-indigo-400 mb-1">{pub.venue}</p>
+              <p className="text-xs text-gray-500">{pub.date}</p>
+            </a>
           ))}
         </div>
       </section>

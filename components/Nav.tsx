@@ -5,6 +5,7 @@ export default function Nav() {
         <span className="font-bold text-white">Portfolio</span>
         <div className="flex gap-6 text-sm text-gray-400">
           <a href="#profile" className="hover:text-white transition-colors">About</a>
+          <a href="#publications" className="hover:text-white transition-colors">Publications</a>
           <a href="#projects" className="hover:text-white transition-colors">Projects</a>
         </div>
       </div>
