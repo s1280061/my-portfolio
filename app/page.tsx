@@ -9,6 +9,29 @@ const interests = [
   "Explainable driving assistance",
 ];
 
+const news = [
+  {
+    date: "Apr 2026",
+    text: "Joined Nissan Motor Co. as AD/ADAS Engineer & AI Researcher.",
+  },
+  {
+    date: "Mar 2026",
+    text: "Presented at IEICE Technical Committee on Intelligent Transport Systems (ITS) 2026.",
+  },
+  {
+    date: "Mar 2026",
+    text: "Received Graduate School Award — Kyushu University Graduate School of Integrated Frontier Sciences.",
+  },
+  {
+    date: "Dec 2025",
+    text: 'Paper accepted & presented at IEEE BigData 2025: "RiSA: Risk-aware Situational Assistant: From Risk Forecasting to Actionable Driver Advice."',
+  },
+  {
+    date: "Dec 2025",
+    text: "Received IEEE BigData 2025 Travel Award from the IEEE BigData 2025 Organizing Committee.",
+  },
+];
+
 const publications = [
   {
     title:
@@ -94,6 +117,19 @@ export default function Home() {
             >
               {skill}
             </span>
+          ))}
+        </div>
+      </section>
+
+      {/* News */}
+      <section id="news" className="max-w-3xl mx-auto px-6 pb-16">
+        <h2 className="text-xl font-semibold mb-6 text-gray-300">News</h2>
+        <div className="space-y-4">
+          {news.map((item, i) => (
+            <div key={i} className="flex gap-4">
+              <span className="text-xs text-indigo-400 font-mono mt-0.5 w-20 shrink-0">{item.date}</span>
+              <p className="text-sm text-gray-400 leading-relaxed">{item.text}</p>
+            </div>
           ))}
         </div>
       </section>
