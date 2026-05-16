@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { projects } from "@/data/projects";
 
 const interests = [
@@ -31,8 +32,15 @@ export default function Home() {
       {/* Hero / Profile */}
       <section id="profile" className="max-w-3xl mx-auto px-6 pt-24 pb-16">
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8">
-          <div className="w-28 h-28 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-4xl font-bold shrink-0">
-            K
+          <div className="w-28 h-28 rounded-full overflow-hidden shrink-0 border-2 border-gray-700">
+            <Image
+              src="/avatar.jpg"
+              alt="Kaito ASAI"
+              width={112}
+              height={112}
+              className="object-cover w-full h-full"
+              priority
+            />
           </div>
           <div>
             <h1 className="text-3xl font-bold mb-1">Kaito ASAI</h1>
