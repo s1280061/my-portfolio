@@ -26,7 +26,7 @@ const artists: Artist[] = [
   {
     name: "MINNIE",
     genre: "K-pop",
-    url: "https://www.youtube.com/watch?v=_lQxaYmt0DQ",
+    url: "https://music.youtube.com/playlist?list=OLAK5uy_mzMqs--OSCQ_V10NecaZyNuJiwrtRgs4o",
     tracks: [
       { title: "HER", url: "https://music.youtube.com/watch?v=V8qJmPj1bTg" },
       { title: "Blind Eyes Red", url: "https://music.youtube.com/watch?v=M0Jc9s2Md7E" },
