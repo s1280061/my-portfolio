@@ -81,6 +81,7 @@ const artists: Artist[] = [
   { name: "W!TCHx", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_mgkX2qHBoOklaFFeDzhDUFhCGLjQpFSQ8" },
   { name: "IZ*ONE", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_kb8nEoKqR28hLrAmanVgSWMdMoKWSVUFg" },
   { name: "STAYC", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_mPVYpk-YfJyPA2dOeDocRVp6EaqMypUJw" },
+  { name: "Shawn Mendes", genre: "Pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_nn0Iu1GpQzH_SsgUwGHnjOS5kELgvLZoM" },
   {
     name: "Jay Chou (周杰倫)",
     genre: "C-pop",
