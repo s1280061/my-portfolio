@@ -53,7 +53,19 @@ const artists: Artist[] = [
       { title: "Yummy Yummy Love", url: "https://music.youtube.com/watch?v=TbuP2ypiTRc" },
     ],
   },
-  { name: "aespa", genre: "K-pop", url: "https://www.youtube.com/@aespa" },
+  {
+    name: "aespa",
+    genre: "K-pop",
+    url: "https://www.youtube.com/@aespa",
+    tracks: [
+      { title: "Black Mamba", url: "https://music.youtube.com/watch?v=4TWR90KJl84" },
+      { title: "Next Level", url: "https://music.youtube.com/watch?v=dYRITmpFbJ4" },
+      { title: "Savage", url: "https://music.youtube.com/watch?v=phuiiNCxRMg" },
+      { title: "Drama", url: "https://music.youtube.com/watch?v=WPdWvnAAurg" },
+      { title: "Supernova", url: "https://music.youtube.com/watch?v=Os_heh8vPfs" },
+      { title: "Armageddon", url: "https://music.youtube.com/watch?v=gj-lvvYQdiU" },
+    ],
+  },
   { name: "Jay Chou (周杰倫) — 七里香", genre: "C-pop", url: "https://www.youtube.com/watch?v=Bbp9ZaJD_eA" },
 ];
 
