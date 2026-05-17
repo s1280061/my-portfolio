@@ -14,7 +14,9 @@ const WorldMap = dynamic(() => import("@/components/WorldMap"), {
 const lived = [
   { place: "愛知", note: "20 years" },
   { place: "福島", note: "4 years" },
+  { place: "インディアナ州 (USA)", note: "3 months" },
   { place: "福岡", note: "2 years" },
+  { place: "神奈川", note: "Present" },
 ];
 
 const visited = [
