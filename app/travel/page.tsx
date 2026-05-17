@@ -1,3 +1,5 @@
+import WorldMap from "@/components/WorldMap";
+
 const lived = [
   { place: "愛知", note: "20 years" },
   { place: "福島", note: "4 years" },
@@ -20,7 +22,11 @@ export default function TravelPage() {
     <main className="min-h-screen bg-black text-gray-100">
       <section className="max-w-3xl mx-auto px-6 pt-24 pb-24">
         <h1 className="text-2xl font-bold mb-2 text-gray-100">Travel</h1>
-        <p className="text-gray-500 text-sm mb-10">Places I&apos;ve lived and visited.</p>
+        <p className="text-gray-500 text-sm mb-8">Places I&apos;ve lived and visited.</p>
+
+        <div className="mb-12">
+          <WorldMap />
+        </div>
 
         <div className="space-y-12">
           <div>
