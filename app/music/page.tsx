@@ -73,6 +73,7 @@ const artists: Artist[] = [
   },
   { name: "BLACKPINK", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_nsoD3Zf0AuDIGT89P_3UYvVS7-2rJRE0k" },
   { name: "IVE", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_k8K_LmuIFJFQOLHMJmqqUosWm6LNcHkgA" },
+  { name: "LE SSERAFIM", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_lXu9b-kyr863NqHndQNB0hrkuuQVGGW8c" },
   {
     name: "Jay Chou (周杰倫)",
     genre: "C-pop",
