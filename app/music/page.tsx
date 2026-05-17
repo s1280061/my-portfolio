@@ -39,7 +39,7 @@ const artists: Artist[] = [
   {
     name: "ITZY",
     genre: "K-pop",
-    url: "https://music.youtube.com/watch?v=NcnkV85Xn_A&list=RDREH5AAqhGMEFONt9DSPUIWSw",
+    url: "https://music.youtube.com/playlist?list=OLAK5uy_lGQH-P8Y6jVEymhBrycCYOHtAqWHe2J_k",
     tracks: [
       { title: "WANNABE", url: "https://music.youtube.com/watch?v=fE2h3lGlOsk" },
       { title: "DALLA DALLA", url: "https://music.youtube.com/watch?v=pNfTK39k55U" },
@@ -78,6 +78,7 @@ const artists: Artist[] = [
   { name: "Dreamcatcher", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_mE8OkibLO_e9-v_PDYxUaX6Zy4reHmAnc" },
   { name: "TAEYEON", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_llkIfbnS6psAHHHvm_efiTCyLCV8Cm3dI" },
   { name: "ILLIT", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_nkT11V97-CjfCX_XbenYl6AVNE6-dFxV0" },
+  { name: "W!TCHx", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_mgkX2qHBoOklaFFeDzhDUFhCGLjQpFSQ8" },
   {
     name: "Jay Chou (周杰倫)",
     genre: "C-pop",
