@@ -61,7 +61,7 @@ const artists: Artist[] = [
   {
     name: "aespa",
     genre: "K-pop",
-    url: "https://www.youtube.com/@aespa",
+    url: "https://music.youtube.com/channel/UC9GtSLeksfK4yuJ_g1lgQbg",
     tracks: [
       { title: "Black Mamba", url: "https://music.youtube.com/watch?v=4TWR90KJl84" },
       { title: "Next Level", url: "https://music.youtube.com/watch?v=dYRITmpFbJ4" },
