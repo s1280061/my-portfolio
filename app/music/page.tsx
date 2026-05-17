@@ -7,7 +7,7 @@ const artists = [
   {
     name: "MINNIE",
     genre: "K-pop",
-    url: "https://youtu.be/_lQxaYmt0DQ?si=fGJRjqdbfxv-OwXl",
+    url: "https://www.youtube.com/watch?v=_lQxaYmt0DQ",
   },
   {
     name: "ITZY",
@@ -17,7 +17,7 @@ const artists = [
   {
     name: "MOMOLAND",
     genre: "K-pop",
-    url: null,
+    url: "https://www.youtube.com/watch?v=txWmd7QKFe8",
   },
   {
     name: "aespa",
@@ -37,7 +37,11 @@ const artists = [
 ];
 
 const soundtracks = [
-  { title: "The Last of Us OST", composer: "Gustavo Santaolalla" },
+  {
+    title: "The Last of Us OST",
+    composer: "Gustavo Santaolalla",
+    url: "https://youtu.be/AlwVQMthv9M?si=s4psFWkdan571PVM",
+  },
 ];
 
 const YoutubeIcon = () => (
@@ -86,10 +90,19 @@ export default function MusicPage() {
             <h2 className="text-lg font-semibold mb-5 text-gray-300">Soundtracks</h2>
             <div className="space-y-3">
               {soundtracks.map((s) => (
-                <div key={s.title} className="p-4 bg-gray-900 rounded-xl border border-gray-800">
-                  <p className="font-medium text-sm text-gray-200">{s.title}</p>
-                  <p className="text-xs text-[#7C8CFF] mt-1">{s.composer}</p>
-                </div>
+                <a
+                  key={s.title}
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 p-4 bg-gray-900 rounded-xl border border-gray-800 hover:border-[#7C8CFF] transition-colors group"
+                >
+                  <YoutubeIcon />
+                  <div>
+                    <p className="font-medium text-sm text-gray-200 group-hover:text-[#7C8CFF] transition-colors">{s.title}</p>
+                    <p className="text-xs text-[#7C8CFF] mt-1">{s.composer}</p>
+                  </div>
+                </a>
               ))}
             </div>
           </div>
