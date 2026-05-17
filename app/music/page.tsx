@@ -97,6 +97,11 @@ const soundtracks = [
     composer: "Gustavo Santaolalla",
     url: "https://music.youtube.com/playlist?list=OLAK5uy_nhz-Usf2TimQpx1_4olzmp4V5xRWFl-2Q&si=e4QcMVpITCXhPt9V",
   },
+  {
+    title: "進撃の巨人 OST",
+    composer: "Hiroyuki Sawano",
+    url: "https://music.youtube.com/playlist?list=PLY7ZxyS8rMhu3lBIZsSll2Xxnh0g-ey5Y",
+  },
 ];
 
 const YoutubeIcon = () => (
