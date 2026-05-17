@@ -35,7 +35,7 @@ const soundtracks = [
   {
     title: "The Last of Us OST",
     composer: "Gustavo Santaolalla",
-    url: "https://youtu.be/AlwVQMthv9M?si=s4psFWkdan571PVM",
+    url: "https://music.youtube.com/playlist?list=OLAK5uy_nhz-Usf2TimQpx1_4olzmp4V5xRWFl-2Q&si=e4QcMVpITCXhPt9V",
   },
 ];
 
