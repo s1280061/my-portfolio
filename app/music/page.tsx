@@ -12,8 +12,25 @@ type Artist = {
 };
 
 const artists: Artist[] = [
-  { name: "G-I•DLE", genre: "K-pop", url: "https://www.youtube.com/@official_i_dle" },
-  { name: "MINNIE", genre: "K-pop", url: "https://www.youtube.com/watch?v=_lQxaYmt0DQ" },
+  {
+    name: "G-I•DLE",
+    genre: "K-pop",
+    url: "https://www.youtube.com/@official_i_dle",
+    tracks: [
+      { title: "Queencard", url: "https://music.youtube.com/watch?v=7HDeem-JaSY" },
+      { title: "TOMBOY", url: "https://music.youtube.com/watch?v=Jh4QFaPmdss" },
+      { title: "Nxde", url: "https://music.youtube.com/watch?v=fCO7f0SmrDc" },
+      { title: "Super Lady", url: "https://music.youtube.com/watch?v=6f3RzjXPQwA" },
+    ],
+  },
+  {
+    name: "MINNIE",
+    genre: "K-pop",
+    url: "https://www.youtube.com/watch?v=_lQxaYmt0DQ",
+    tracks: [
+      { title: "Like a Dream", url: "https://music.youtube.com/watch?v=5v8Y9mWwqRc" },
+    ],
+  },
   {
     name: "ITZY",
     genre: "K-pop",
