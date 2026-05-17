@@ -72,7 +72,14 @@ const artists: Artist[] = [
     ],
   },
   { name: "BLACKPINK", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_nsoD3Zf0AuDIGT89P_3UYvVS7-2rJRE0k" },
-  { name: "Jay Chou (周杰倫) — 七里香", genre: "C-pop", url: "https://www.youtube.com/watch?v=Bbp9ZaJD_eA" },
+  {
+    name: "Jay Chou (周杰倫)",
+    genre: "C-pop",
+    url: "https://music.youtube.com/playlist?list=OLAK5uy_lsLIti8r4lQPmdUdikOs-7pBd02nM4F1o",
+    tracks: [
+      { title: "七里香", url: "https://www.youtube.com/watch?v=Bbp9ZaJD_eA" },
+    ],
+  },
 ];
 
 const soundtracks = [
