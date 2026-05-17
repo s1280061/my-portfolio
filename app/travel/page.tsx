@@ -1,4 +1,15 @@
-import WorldMap from "@/components/WorldMap";
+"use client";
+
+import dynamic from "next/dynamic";
+
+const WorldMap = dynamic(() => import("@/components/WorldMap"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-64 rounded-2xl border border-gray-800 bg-gray-950 flex items-center justify-center">
+      <span className="text-gray-600 text-sm">Loading map...</span>
+    </div>
+  ),
+});
 
 const lived = [
   { place: "愛知", note: "20 years" },
