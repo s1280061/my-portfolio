@@ -28,7 +28,12 @@ const artists: Artist[] = [
     genre: "K-pop",
     url: "https://www.youtube.com/watch?v=_lQxaYmt0DQ",
     tracks: [
+      { title: "HER", url: "https://music.youtube.com/watch?v=V8qJmPj1bTg" },
+      { title: "Blind Eyes Red", url: "https://music.youtube.com/watch?v=M0Jc9s2Md7E" },
       { title: "Like a Dream", url: "https://music.youtube.com/watch?v=5v8Y9mWwqRc" },
+      { title: "Obsession", url: "https://music.youtube.com/watch?v=R0kJmREfJ4Q" },
+      { title: "Valentine's Dream", url: "https://music.youtube.com/watch?v=8Ck7Qq6Y8xM" },
+      { title: "Expectations", url: "https://music.youtube.com/watch?v=R6jG3G4J9mQ" },
     ],
   },
   {
