@@ -71,6 +71,7 @@ const artists: Artist[] = [
       { title: "Armageddon", url: "https://music.youtube.com/watch?v=gj-lvvYQdiU" },
     ],
   },
+  { name: "BLACKPINK", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_nsoD3Zf0AuDIGT89P_3UYvVS7-2rJRE0k" },
   { name: "Jay Chou (周杰倫) — 七里香", genre: "C-pop", url: "https://www.youtube.com/watch?v=Bbp9ZaJD_eA" },
 ];
 
