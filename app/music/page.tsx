@@ -1,34 +1,33 @@
-const artists = [
-  {
-    name: "G-I•DLE",
-    genre: "K-pop",
-    url: "https://www.youtube.com/@official_i_dle",
-  },
-  {
-    name: "MINNIE",
-    genre: "K-pop",
-    url: "https://www.youtube.com/watch?v=_lQxaYmt0DQ",
-  },
+"use client";
+
+import { useState } from "react";
+
+type Track = { title: string; url: string };
+
+type Artist = {
+  name: string;
+  genre: string;
+  url: string;
+  tracks?: Track[];
+};
+
+const artists: Artist[] = [
+  { name: "G-I•DLE", genre: "K-pop", url: "https://www.youtube.com/@official_i_dle" },
+  { name: "MINNIE", genre: "K-pop", url: "https://www.youtube.com/watch?v=_lQxaYmt0DQ" },
   {
     name: "ITZY",
     genre: "K-pop",
-    url: "https://www.youtube.com/@ITZY",
+    url: "https://music.youtube.com/watch?v=NcnkV85Xn_A&list=RDREH5AAqhGMEFONt9DSPUIWSw",
+    tracks: [
+      { title: "WANNABE", url: "https://music.youtube.com/watch?v=fE2h3lGlOsk" },
+      { title: "DALLA DALLA", url: "https://music.youtube.com/watch?v=pNfTK39k55U" },
+      { title: "LOCO", url: "https://music.youtube.com/watch?v=MjCZfZfucEc" },
+      { title: "CAKE", url: "https://music.youtube.com/watch?v=0bIRwBpBcZQ" },
+    ],
   },
-  {
-    name: "MOMOLAND",
-    genre: "K-pop",
-    url: "https://www.youtube.com/watch?v=txWmd7QKFe8",
-  },
-  {
-    name: "aespa",
-    genre: "K-pop",
-    url: "https://www.youtube.com/@aespa",
-  },
-  {
-    name: "Jay Chou (周杰倫) — 七里香",
-    genre: "C-pop",
-    url: "https://www.youtube.com/watch?v=Bbp9ZaJD_eA",
-  },
+  { name: "MOMOLAND", genre: "K-pop", url: "https://www.youtube.com/watch?v=txWmd7QKFe8" },
+  { name: "aespa", genre: "K-pop", url: "https://www.youtube.com/@aespa" },
+  { name: "Jay Chou (周杰倫) — 七里香", genre: "C-pop", url: "https://www.youtube.com/watch?v=Bbp9ZaJD_eA" },
 ];
 
 const soundtracks = [
@@ -40,10 +39,67 @@ const soundtracks = [
 ];
 
 const YoutubeIcon = () => (
-  <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current text-red-500" aria-hidden="true">
+  <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current text-red-500 shrink-0" aria-hidden="true">
     <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
   </svg>
 );
+
+function ArtistCard({ artist }: { artist: Artist }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="bg-gray-900 rounded-xl border border-gray-800 overflow-hidden hover:border-[#7C8CFF] transition-colors">
+      <div className="flex items-center justify-between p-4">
+        <a
+          href={artist.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-sm font-medium text-gray-200 hover:text-[#7C8CFF] transition-colors"
+        >
+          <YoutubeIcon />
+          {artist.name}
+        </a>
+        <div className="flex items-center gap-2">
+          {artist.genre && (
+            <span className="text-xs text-[#7C8CFF] bg-gray-800 px-2 py-0.5 rounded-full">{artist.genre}</span>
+          )}
+          {artist.tracks && (
+            <button
+              onClick={() => setOpen(!open)}
+              className="text-xs text-gray-500 hover:text-gray-300 transition-colors flex items-center gap-1"
+            >
+              Tracks
+              <svg
+                viewBox="0 0 24 24"
+                className={`w-3 h-3 fill-none stroke-current transition-transform ${open ? "rotate-180" : ""}`}
+                strokeWidth={2}
+              >
+                <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+          )}
+        </div>
+      </div>
+
+      {open && artist.tracks && (
+        <div className="border-t border-gray-800 px-4 py-3 space-y-2">
+          {artist.tracks.map((track) => (
+            <a
+              key={track.title}
+              href={track.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm text-gray-400 hover:text-[#7C8CFF] transition-colors"
+            >
+              <span className="text-gray-700">▶</span>
+              {track.title}
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function MusicPage() {
   return (
@@ -58,26 +114,7 @@ export default function MusicPage() {
             <h2 className="text-lg font-semibold mb-5 text-gray-300">Artists</h2>
             <div className="grid gap-3 sm:grid-cols-2">
               {artists.map((a) => (
-                a.url ? (
-                  <a
-                    key={a.name}
-                    href={a.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between p-4 bg-gray-900 rounded-xl border border-gray-800 hover:border-[#7C8CFF] transition-colors group"
-                  >
-                    <span className="font-medium text-sm text-gray-200 group-hover:text-[#7C8CFF] transition-colors flex items-center gap-2">
-                      <YoutubeIcon />
-                      {a.name}
-                    </span>
-                    {a.genre && <span className="text-xs text-[#7C8CFF] bg-gray-800 px-2 py-0.5 rounded-full">{a.genre}</span>}
-                  </a>
-                ) : (
-                  <div key={a.name} className="flex items-center justify-between p-4 bg-gray-900 rounded-xl border border-gray-800">
-                    <span className="font-medium text-sm text-gray-200">{a.name}</span>
-                    {a.genre && <span className="text-xs text-[#7C8CFF] bg-gray-800 px-2 py-0.5 rounded-full">{a.genre}</span>}
-                  </div>
-                )
+                <ArtistCard key={a.name} artist={a} />
               ))}
             </div>
           </div>
