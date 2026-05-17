@@ -76,6 +76,7 @@ const artists: Artist[] = [
   { name: "LE SSERAFIM", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_lXu9b-kyr863NqHndQNB0hrkuuQVGGW8c" },
   { name: "TWICE", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_mGPd1ASltST1pPNsekZXKO2VwGUFp_FQs" },
   { name: "Dreamcatcher", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_mE8OkibLO_e9-v_PDYxUaX6Zy4reHmAnc" },
+  { name: "TAEYEON", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_llkIfbnS6psAHHHvm_efiTCyLCV8Cm3dI" },
   {
     name: "Jay Chou (周杰倫)",
     genre: "C-pop",
