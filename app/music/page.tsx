@@ -15,7 +15,7 @@ const artists: Artist[] = [
   {
     name: "G-I•DLE",
     genre: "K-pop",
-    url: "https://www.youtube.com/@official_i_dle",
+    url: "https://music.youtube.com/@official_i_dle?si=FMBCtBGIRY7Zcpxh",
     tracks: [
       { title: "Queencard", url: "https://music.youtube.com/watch?v=7HDeem-JaSY" },
       { title: "TOMBOY", url: "https://music.youtube.com/watch?v=Jh4QFaPmdss" },
