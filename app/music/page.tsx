@@ -80,6 +80,7 @@ const artists: Artist[] = [
   { name: "ILLIT", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_nkT11V97-CjfCX_XbenYl6AVNE6-dFxV0" },
   { name: "W!TCHx", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_mgkX2qHBoOklaFFeDzhDUFhCGLjQpFSQ8" },
   { name: "IZ*ONE", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_kb8nEoKqR28hLrAmanVgSWMdMoKWSVUFg" },
+  { name: "STAYC", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_mPVYpk-YfJyPA2dOeDocRVp6EaqMypUJw" },
   {
     name: "Jay Chou (周杰倫)",
     genre: "C-pop",
