@@ -29,11 +29,6 @@ const artists = [
     genre: "C-pop",
     url: "https://www.youtube.com/watch?v=Bbp9ZaJD_eA",
   },
-  {
-    name: "Like a Dream",
-    genre: "",
-    url: null,
-  },
 ];
 
 const soundtracks = [
