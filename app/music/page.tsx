@@ -55,7 +55,8 @@ export default function MusicPage() {
     <main className="min-h-screen bg-black text-gray-100">
       <section className="max-w-3xl mx-auto px-6 pt-24 pb-24">
         <h1 className="text-2xl font-bold mb-2 text-gray-100">Music</h1>
-        <p className="text-gray-500 text-sm mb-10">What I listen to.</p>
+        <p className="text-gray-500 text-sm mb-1">I like music that feels cinematic, emotional, or nostalgic.</p>
+        <p className="text-gray-500 text-sm mb-10">Recently listening to K-pop, C-pop, and game/film soundtracks.</p>
 
         <div className="space-y-12">
           <div>
