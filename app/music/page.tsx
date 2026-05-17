@@ -79,6 +79,7 @@ const artists: Artist[] = [
   { name: "TAEYEON", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_llkIfbnS6psAHHHvm_efiTCyLCV8Cm3dI" },
   { name: "ILLIT", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_nkT11V97-CjfCX_XbenYl6AVNE6-dFxV0" },
   { name: "W!TCHx", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_mgkX2qHBoOklaFFeDzhDUFhCGLjQpFSQ8" },
+  { name: "IZ*ONE", genre: "K-pop", url: "https://music.youtube.com/playlist?list=OLAK5uy_kb8nEoKqR28hLrAmanVgSWMdMoKWSVUFg" },
   {
     name: "Jay Chou (周杰倫)",
     genre: "C-pop",
