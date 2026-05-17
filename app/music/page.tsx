@@ -50,7 +50,7 @@ const artists: Artist[] = [
   {
     name: "MOMOLAND",
     genre: "K-pop",
-    url: "https://music.youtube.com/@momoland_official?si=QXdW95Uf-uye4n9h",
+    url: "https://music.youtube.com/playlist?list=OLAK5uy_lhnE_Yytn-r1fS_e5e7oq5z4CX7i9R6wc",
     tracks: [
       { title: "BAAM", url: "https://music.youtube.com/watch?v=JQGRg8XBnB4" },
       { title: "BBoom BBoom", url: "https://music.youtube.com/watch?v=txWmd7QKFe8" },
