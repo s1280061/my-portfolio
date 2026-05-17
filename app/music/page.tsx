@@ -42,7 +42,17 @@ const artists: Artist[] = [
       { title: "CAKE", url: "https://music.youtube.com/watch?v=0bIRwBpBcZQ" },
     ],
   },
-  { name: "MOMOLAND", genre: "K-pop", url: "https://www.youtube.com/watch?v=txWmd7QKFe8" },
+  {
+    name: "MOMOLAND",
+    genre: "K-pop",
+    url: "https://www.youtube.com/watch?v=txWmd7QKFe8",
+    tracks: [
+      { title: "BAAM", url: "https://music.youtube.com/watch?v=JQGRg8XBnB4" },
+      { title: "BBoom BBoom", url: "https://music.youtube.com/watch?v=txWmd7QKFe8" },
+      { title: "Wrap Me in Plastic", url: "https://music.youtube.com/watch?v=tsN-MkpiZB0" },
+      { title: "Yummy Yummy Love", url: "https://music.youtube.com/watch?v=TbuP2ypiTRc" },
+    ],
+  },
   { name: "aespa", genre: "K-pop", url: "https://www.youtube.com/@aespa" },
   { name: "Jay Chou (周杰倫) — 七里香", genre: "C-pop", url: "https://www.youtube.com/watch?v=Bbp9ZaJD_eA" },
 ];
