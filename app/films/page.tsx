@@ -6,12 +6,14 @@ const films = [
   { title: "The Last of Us", year: "2023", type: "Series" },
   { title: "宇宙兄弟", year: "2012", type: "Anime" },
   { title: "進撃の巨人", year: "2013", type: "Anime" },
+  { title: "Life is Strange", year: "2015", type: "Game" },
 ];
 
 const typeColor: Record<string, string> = {
   Film: "text-[#7C8CFF]",
   Series: "text-emerald-400",
   Anime: "text-rose-400",
+  Game: "text-amber-400",
 };
 
 export default function FilmsPage() {
