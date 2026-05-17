@@ -102,6 +102,11 @@ const soundtracks = [
     composer: "Hiroyuki Sawano",
     url: "https://music.youtube.com/playlist?list=PLY7ZxyS8rMhu3lBIZsSll2Xxnh0g-ey5Y",
   },
+  {
+    title: "Initial D BGM",
+    composer: "Various Artists",
+    url: "https://music.youtube.com/playlist?list=OLAK5uy_mFwgi3GQlez3z1TZWYSKWpS2wXY5x2xec",
+  },
 ];
 
 const YoutubeIcon = () => (
