@@ -107,6 +107,11 @@ const soundtracks = [
     composer: "Various Artists",
     url: "https://music.youtube.com/playlist?list=OLAK5uy_mFwgi3GQlez3z1TZWYSKWpS2wXY5x2xec",
   },
+  {
+    title: "Initial D V2 BGM",
+    composer: "Various Artists",
+    url: "https://music.youtube.com/playlist?list=OLAK5uy_ksYzPppqL929UVMNvKXlIBKom8d1HCGOk",
+  },
 ];
 
 const YoutubeIcon = () => (
