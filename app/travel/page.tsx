@@ -37,7 +37,7 @@ export default function TravelPage() {
         <h1 className="text-2xl font-bold mb-2 text-gray-100">Travel</h1>
         <p className="text-gray-500 text-sm mb-8">Places I&apos;ve lived and visited.</p>
 
-        <div className="mb-12">
+        <div className="mb-12 max-w-xl">
           <WorldMap />
         </div>
 
