@@ -31,7 +31,7 @@ const artists = [
   },
   {
     name: "Like a Dream",
-    genre: "Soundtrack",
+    genre: "",
     url: null,
   },
 ];
@@ -74,12 +74,12 @@ export default function MusicPage() {
                       <YoutubeIcon />
                       {a.name}
                     </span>
-                    <span className="text-xs text-[#7C8CFF] bg-gray-800 px-2 py-0.5 rounded-full">{a.genre}</span>
+                    {a.genre && <span className="text-xs text-[#7C8CFF] bg-gray-800 px-2 py-0.5 rounded-full">{a.genre}</span>}
                   </a>
                 ) : (
                   <div key={a.name} className="flex items-center justify-between p-4 bg-gray-900 rounded-xl border border-gray-800">
                     <span className="font-medium text-sm text-gray-200">{a.name}</span>
-                    <span className="text-xs text-[#7C8CFF] bg-gray-800 px-2 py-0.5 rounded-full">{a.genre}</span>
+                    {a.genre && <span className="text-xs text-[#7C8CFF] bg-gray-800 px-2 py-0.5 rounded-full">{a.genre}</span>}
                   </div>
                 )
               ))}

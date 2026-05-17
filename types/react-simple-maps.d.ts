@@ -33,4 +33,15 @@ declare module "react-simple-maps" {
     children?: ReactNode;
   }
   export function Marker(props: MarkerProps): JSX.Element;
+
+  export interface LineProps {
+    from: [number, number];
+    to: [number, number];
+    stroke?: string;
+    strokeWidth?: number;
+    strokeLinecap?: string;
+    strokeDasharray?: string;
+    fill?: string;
+  }
+  export function Line(props: LineProps): JSX.Element;
 }
