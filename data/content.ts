@@ -19,6 +19,10 @@ export const education = [
 
 export const news = [
   {
+    date: "Oct 2026",
+    text: 'Released the extended version of RiSA as a preprint on Zenodo: "RiSA: Risk-aware Situational Assistant: From Risk Forecasting to Actionable Driver Advice."',
+  },
+  {
     date: "Apr 2026",
     text: "Joined Nissan Motor Co. as AD/ADAS Engineer & AI Researcher.",
   },
@@ -41,6 +45,13 @@ export const news = [
 ];
 
 export const publications = [
+  {
+    title:
+      "RiSA: Risk-aware Situational Assistant: From Risk Forecasting to Actionable Driver Advice (Extended Version)",
+    venue: "Preprint, Zenodo",
+    date: "Oct 26, 2026",
+    url: "https://doi.org/10.5281/zenodo.23667088",
+  },
   {
     title:
       "A Quantitative Analysis of Driving Advice Capabilities of the Vision-Language Model LLaVA",
