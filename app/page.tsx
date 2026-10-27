@@ -43,7 +43,7 @@ export default function Home() {
                 GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/kaito-asai-267671393/"
+                href="https://www.linkedin.com/in/kaito-asai/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-sm text-[#7C8CFF] hover:text-[#a0aaff] underline underline-offset-4"
